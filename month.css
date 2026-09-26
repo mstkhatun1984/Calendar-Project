@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e8;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.year-title {
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    color: #804915;
+    margin: 20px 0;
+
+}
+.year-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    margin-top: 20px;
+}
+.month-box {
+    background: #f1dfca;
+    padding: 20px;
+    border-radius: 5px;
+  
+}
+
+
+.month-box h3 {
+    font-size: 20px;
+    border-bottom: 2px solid #b57947;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.small-calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.small-calendar td {
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+    font-weight: bold;  
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #b4533c;
+    border-bottom: 3px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Calendar table */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.calendar th {
+    padding: 12px;
+    font-weight: 600;
+    font-size: 28px;
+    border-bottom: 2px solid #ccc;
+}
+.calendar td {
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-weight: bold;  
+    font-size: 26px; 
+
+}
+
+.calendar tr:nth-child(even) td {
+    background-color: #f0f0f0;
+}
+
+.calendar td:hover {
+    background: #b1b2dc;
+}
+
+.tabs {
+    position: fixed;      
+    bottom: 0;            
+    left: 0;
+    width: 100%;          
+    background: rgb(193, 134, 98);    
+    text-align: center;
+    padding: 15px;
+}
+
+.tabs a {
+    padding: 10px 14px;
+    margin: 6px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    transition: 0.3s;
+}
+
+.tabs a:hover {
+    transform: scale(1.1);
+    background: #e2cfcf;
+}
